@@ -233,5 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    setupDrawingWidget();
+    if (document.body.dataset.page === 'finale') {
+        setupDrawingWidget();
+    }
 });
